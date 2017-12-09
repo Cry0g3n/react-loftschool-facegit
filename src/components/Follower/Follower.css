@@ -1,0 +1,18 @@
+.follower {
+    display: flex;
+    padding: 30px;
+}
+
+.follower__avatar {
+    width: 100px;
+    height: 100px;
+}
+
+.follower__info {
+    padding: 10px 20px;
+}
+
+.follower__info a {
+    font-weight: bold;
+    font-size: 1.1em;
+}

@@ -1,0 +1,31 @@
+.user-card__header {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-card__avatar img {
+    max-height: 200px;
+}
+
+.user-card__info {
+    padding: 20px;
+    line-height: 20px;
+}
+
+.user-card__login {
+    margin-bottom: 10px;
+}
+
+.user-card__info span {
+    display: block;
+}
+
+.user-card__login {
+    font-weight: bold;
+}
+
+.spinner {
+    text-align: center;
+    padding-top: 200px;
+}
