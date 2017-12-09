@@ -8,7 +8,7 @@ export default handleActions(
             isAuthorized: true,
             token: action.payload
         }),
-        [logout]: (state, action) => ({ ...state, token: null, isAuthorized: false })
+        [logout]: (state, action) => ({...state, token: null, isAuthorized: false})
     },
     {
         token: null,

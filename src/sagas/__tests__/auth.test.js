@@ -62,14 +62,14 @@ describe('Сага authFlow', () => {
         });
         it("3. Эффект put authorize", () => {
             expect(
-                saga.next({ payload: localStorageToken }).value
+                saga.next({payload: localStorageToken}).value
             ).toEqual(put(authorize()));
         });
         it("4. Эффект call(setTokenApi, token) где токен, который получен из прошлого шага", () => {
             expect(
-                saga.next({ payload: localStorageToken }).value
+                saga.next({payload: localStorageToken}).value
             ).toEqual(
-                call(setTokenApi, { payload: localStorageToken })
+                call(setTokenApi, {payload: localStorageToken})
             );
         });
 

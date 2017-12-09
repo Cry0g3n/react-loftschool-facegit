@@ -2,7 +2,8 @@ import {
     clearNetworkErrors,
     networkError
 } from "../../actions/network";
-import { error, message } from "../../reducers/network";
+import {error, message} from "../../reducers/network";
+
 describe("Тест для network.js", () => {
     describe("Reducer error", () => {
         it("Action clearNetworkErrors возвращает initialState", () => {
@@ -33,7 +34,7 @@ describe("Тест для network.js", () => {
             const action = {
                 type: networkError.toString(),
                 payload: {
-                    response: { data: { message: "Some message" } }
+                    response: {data: {message: "Some message"}}
                 }
             };
             const next = message(null, action);
